@@ -66,7 +66,7 @@ app_license = "MIT"
 # ------------
 
 # before_install = "france_compliance.install.before_install"
-# after_install = "france_compliance.install.after_install"
+after_install = "france_compliance.install.after_install"
 
 # Uninstallation
 # ------------
@@ -188,3 +188,8 @@ app_license = "MIT"
 # 	"france_compliance.auth.validate"
 # ]
 
+regional_overrides = {
+	'France': {
+		'erpnext.tests.test_regional.test_method': 'france_compliance.install.test_method'
+	},
+}
