@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include france_compliance *.css
+recursive-include france_compliance *.csv
+recursive-include france_compliance *.html
+recursive-include france_compliance *.ico
+recursive-include france_compliance *.js
+recursive-include france_compliance *.json
+recursive-include france_compliance *.md
+recursive-include france_compliance *.png
+recursive-include france_compliance *.py
+recursive-include france_compliance *.svg
+recursive-include france_compliance *.txt
+recursive-exclude france_compliance *.pyc
