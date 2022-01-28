@@ -112,6 +112,17 @@ after_install = "france_compliance.install.after_install"
 #	}
 # }
 
+doc_events = {
+	"Sales Invoice": {
+		"on_trash": "france_compliance.check_deletion_permission",
+		"on_submit": "france_compliance.create_transaction_log"
+	},
+	"Payment Entry": {
+		"on_trash": "france_compliance.check_deletion_permission",
+		"on_submit": "france_compliance.create_transaction_log"
+	},
+}
+
 # Scheduled Tasks
 # ---------------
 
